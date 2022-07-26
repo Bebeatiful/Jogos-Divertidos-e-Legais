@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
          <title>
             Jogos Divertidos e legais
          </title>
          <link rel = "stylesheet" href="Styles.css">
     </head>
     <body>
+        <ul class = "menu">
+            <li class = "link">
+                <a href="#jogos">
+                    Jogos
+                </a>           
+            </li>  
+            <li class = "link">
+                <a href = "#about">
+                   Sobre
+                </a>
+            </li>
+            <li class = "link">
+                <a href="#contato">
+                    Outros trabalhos
+                </a>
+            </li>  
+            <li class="link">
+                <a href = "#mapa">
+                    Mapa
+                </a>
+            </li>       
+        </ul>
+        <div class="lini">
+            
+        </div>
         <h1>
             Jogos Divertido e legais
         </h1>
@@ -16,65 +44,111 @@
         <h3>
             Arraste para baixo para encontra os jogos
         </h3>
-        <h4>
-            Fruit Ninja
-        </h4>
-        <a href="screens/Ninja.html">
-            <img src="assets/Ilustração-Sem-Título 3.png">s
-        </a>
-        <h4>
-            Jogo da Garrafa
-        </h4>
-     
-        <a href="screens/Garrafa.html">
-            <img src="assets/Ilustração-Sem-Título 4.png">
-        </a>
-        <h4>
-            Bolinhas Malucas
-        </h4>
-      
-        <a href="screens/BolinhasMalucas.html">
-            <img src="assets/Ilustração-Sem-Título 5.png">
-        </a>
-        <h4>
-            Natal do Penguim
-        </h4>
-       
-        <a href="screens/Natal.html" >
-            <img src="assets/Ilustração-Sem-Título 2.png">
-        </a>
-        <h4>
-            Virus Medroso
-        </h4>
-      
-        <a href="screens/Virus.html">
-            <img src="assets/Ilustração-Sem-Título 1.png">
-        </a>
-        <h4>
-            Caçar ao Tesouro!
-        </h4>
-    
-        <a href="screens/CaçarAoTesouro.html">
-            <img src="assets/Ilustração-Sem-Título.png">
-        </a>
-        <h2>
-            Bernardo Viana
-        </h2>
-        <p>
-            Bernardo Viana tem 12 anos, ele é um estudante. Ele gosta de plantas carnivoras e desevolve varios jogos divertido e legais.
-        </p>
-        <h2>
-            Conheça mais projeto de Bernardo Viana
-        </h2>
-        <br>
-        <span>
-        <a href="https://codepen.io/bernardovs/full/wvymeBN"target= "_blank">
-            <img src="assets/codepen.png"class = "be">
-        </a>   
-        <a href="https://gallery.appinventor.mit.edu/byauthor/a86813b1-aab0-0e18-09b6-b5e2a06edd7e/name"target= "_blank">
-            <img src = "assets/MIT.png"class = "be">
-        </a>
-        </span>
+        <section id="about">
+            <h2>
+                Bernardo Viana
+            </h2>
+            <p>
+                Bernardo Viana tem 12 anos, ele é um estudante. Ele gosta de plantas carnivoras e desevolve varios jogos divertido e legais.
+            </p>
+        </section>
+        <section id="jogos">
+            <h2>
+               Meus jogos
+            </h2>
+            <div id="myCarousel" class="carousel slide">
+                <center>
+                  <!-- Para envolver os slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                     <h4>
+                            Fruit Ninja
+                     </h4>
+                            <a href="screens/Ninja.html">
+                            <img src="assets/Ilustração-Sem-Título 3.png">s
+                          </a>
+                    </div>
+              
+                    <div class="item">
+                      <h4>
+                              Jogo da Garrafa
+                          </h4>
+                       
+                          <a href="screens/Garrafa.html">
+                              <img src="assets/Ilustração-Sem-Título 4.png">
+                          </a>
+                      </div>
+                      <div class = "item">
+                        <h4>
+                            Bolinhas Malucas
+                        </h4>
+                      
+                        <a href="screens/BolinhasMalucas.html">
+                            <img src="assets/Ilustração-Sem-Título 5.png">
+                        </a>
+                      </div>
+                      <div class = "item">
+                        <h4>
+                            Natal do Penguim
+                        </h4>
+                       
+                        <a href="screens/Natal.html" >
+                            <img src="assets/Ilustração-Sem-Título 2.png">
+                        </a>
+                      </div>
+                      <div class = "item">
+                        <h4>
+                            Virus Medroso
+                        </h4>
+                      
+                        <a href="screens/Virus.html">
+                            <img src="assets/Ilustração-Sem-Título 1.png">
+                        </a>
+                      </div>
+                      <div class = "item">
+                        <h4>
+                            Caçar ao Tesouro!
+                        </h4>
+                    
+                        <a href="screens/CaçarAoTesouro.html">
+                            <img src="assets/Ilustração-Sem-Título.png">
+                        </a>
+                      </div>
+
+                  </div>
+              
+                  <!-- Controles direito e esquero -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </center>
+                
+                </div>       
+          
+            
+            
+            
+        </section>               
+        <section id="contato">
+            <h2>
+                Conheça mais projeto de Bernardo Viana
+            </h2>
+            <br>
+            <span>
+            <a href="https://codepen.io/bernardovs/full/wvymeBN"target= "_blank">
+                <img src="assets/codepen.png"class = "be">
+            </a>   
+            <a href="https://gallery.appinventor.mit.edu/byauthor/a86813b1-aab0-0e18-09b6-b5e2a06edd7e/name"target= "_blank">
+                <img src = "assets/MIT.png"class = "be">
+            </a>
+        </section>        
+    </span>
+    <section id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23983.083550795625!2d-38.470362449957946!3d-12.986146939681404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716112050422ebd%3A0xf71c84369573db9d!2sSalvador%2C%20BA!5e0!3m2!1spt-BR!2sbr!4v1658182519854!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
         <br>
         <h5>
             Desenvolvido por Eu e a Pro
